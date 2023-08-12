@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Content Management Tool</title>
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+</head>
+
+<body>
+    <div class="header-container">
+        <div class="interactive-heading">
+            <h1>CONTENT MANAGEMENT TOOL</h1>
+        </div>
+    </div>
+    <div class="card" style="height: 12cm; width: 15cm;">
+        <!-- Your form -->
+        <div class="input-section">
+            <b><label class="label-section" for="title">TITLE:</label></b>
+            <textarea class="div-section" cols="50" type="text" id="entryTitle" placeholder="Enter title" required></textarea>
+        </div>
+
+        <div class="input-section">
+            <b><label class="label-section" for="content">CONTENT:</label></b>
+            <textarea class="div-section" cols="100" type="text" id="entryContent" placeholder="Enter content" required></textarea>
+        </div>
+
+        <div class="input-section">
+            <b><label class="label-section" for="image">IMAGE:</label></b>
+            <input type="file" id="entryImage" accept="image/*">
+        </div>
+
+        <div class="input-section">
+            <b><label class="label-section" for="video">VIDEO:</label></b>
+            <input type="file" id="entryVideo" accept="video/*">
+        </div>
+        <!-- End of your form -->
+
+    </div>
+    <br>
+    <br>
+    <div style="text-align: center;">
+        <button onclick="submitForm()">SUBMIT</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="container">
+        <div class="submitted-data-container" id="submittedDataContainer">
+            <!-- The submitted data will be displayed here -->
+        </div>
+    </div>
+
+
+</body>
+
+</html>
