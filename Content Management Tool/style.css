@@ -1,0 +1,201 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f0f0;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #333333;
+    padding: 20px;
+    margin: 0;
+}
+
+.header-container {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.interactive-heading {
+    display: inline-block;
+    background-color: #040505;
+    /* Gradient background */
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.interactive-heading:hover {
+    transform: scale(1.05);
+    /* Add a slight scale on hover */
+}
+
+.interactive-heading h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.input-section {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.label-section {
+    text-decoration: underline;
+    font-size: 16px;
+    color: #444444;
+}
+
+.div-section {
+    height: 40px;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 8px;
+    width: 100%;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+.div-section:focus-within {
+    border-color: #3498db;
+    background-color: #f7f7f7;
+}
+
+.preview {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.video-preview {
+    max-width: 100%;
+    height: auto;
+}
+
+.input-section label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555555;
+}
+
+.input-section input[type="text"],
+.input-section input[type="file"],
+.input-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #333333;
+    background-color: #f7f7f7;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #151514;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+.data-container {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.card {
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: #ffffff;
+    margin: auto;
+}
+
+.card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 20px;
+    color: #333333;
+}
+
+.card-body {
+    margin-top: 10px;
+    color: #555555;
+}
+
+
+/* Add styles for the submitted data container */
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.submitted-data-container {
+    margin-top: 40px;
+    /* Orange background */
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.submitted-card {
+    border: 1px solid grey;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px;
+    background-color: #4998b5;
+    background-size: cover;
+    background-position: center;
+    width: calc(33.33% - 20px);
+    max-width: 300px;
+    /* Adjust the max-width as needed */
+}
+
+.submitted-card-header {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.submitted-card-title {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.submitted-card-body {
+    margin-top: 10px;
+}
+
+.submitted-image {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto;
+}
+
+.submitted-video {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: 10px auto 20px;
+}
